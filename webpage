@@ -4,3 +4,9 @@ Webpage changes done in Main branch.
 Checking the Ruleset created for Pull request on Main branch.
 verifying the fetch and pull operations.
 Also Checking the Amend operations in same commit.
+Checking the Ruleset created for Pull request on Main branch.
+Checking the Revert operations.
+Revert commit 1 is left.
+Revert commit 2 is left.
+checking for the DIff command.
+
