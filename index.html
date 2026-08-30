@@ -72,6 +72,53 @@
             background-clip: text;
         }
         
+        .blood-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: #8B0000;
+            text-shadow: 0 0 10px rgba(139, 0, 0, 0.8);
+            position: relative;
+            display: inline-block;
+            animation: bloodDrip 2s ease-in-out infinite;
+        }
+        
+        .blood-text::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 20px;
+            background: linear-gradient(to bottom, #8B0000, #660000, transparent);
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: drip 1.5s ease-in-out infinite;
+        }
+        
+        @keyframes bloodDrip {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.85;
+            }
+        }
+        
+        @keyframes drip {
+            0% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 0.8;
+            }
+            80% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateX(-50%) translateY(30px);
+                opacity: 0;
+            }
+        }
+        
         @keyframes pulse {
             0%, 100% {
                 opacity: 1;
@@ -100,7 +147,7 @@
 <body>
     <div class="container">
         <div class="line1">
-            Look my Love for you Pussy Girl!!! i really need to Fuck you and i wanna do it Hard.
+            Look my Love for you Pussy Girl!!! <span class="blood-text">i really need to Fuck you and i wanna do it Hard!!!! Come to Dicky!!!!</span>
         </div>
         <div class="line2">
             Fucking missing you like Hell!!!! Come to Dicky!!!!
